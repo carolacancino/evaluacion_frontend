@@ -1,0 +1,88 @@
+
+#map-canvas {width:100%;height:800px;margin: 0 auto;padding: 0px;}
+#panel {
+        position: absolute;
+        z-index:5;
+        margin-top: 140px;
+        margin-left: 30px;
+        background-color: #fff;
+        padding: 15px;
+        border: 1px solid #999;
+        width: 250px;
+
+        #submit{
+               background-color: #F6B765;
+               border-style: none;
+               /* margin: 24px; */
+               padding: 4px;
+               margin-top: 19px;
+        }
+    }
+
+header{
+
+    .navbar{
+        background:black;
+
+        .fa{
+                font-size: 53px;
+                 margin-top: 3%;
+                 color:#F6B765;
+        }
+    }
+
+    .logo{
+        height: 46px;
+   margin: -4px -23px -23px 28px;
+    }
+
+
+a {
+  &.tooltips {
+    position: relative;
+    display: inline;
+
+    div {
+      font-family: 'Mandali', sans-serif;
+      position: absolute;
+      width: 300px;
+      color: black;
+      background: #D0D0CE;
+      height: 230px;
+      text-align: center;
+      visibility: hidden;
+      border-radius: 9px;
+
+      &:after {
+        position: absolute;
+        bottom: 100%;
+        left: -340%;
+        margin-left: -8px;
+        width: 0;
+        height: 0;
+        border-bottom: 8px solid #D0D0CE;
+        border-right: 8px solid transparent;
+        border-left: 8px solid transparent;
+      }
+    }
+  }
+
+  &:hover.tooltips div {
+    visibility: visible;
+    opacity: 1;
+    top: 30px;
+    left: 50%;
+    margin-left: -76px;
+    z-index: 999;
+  }
+}
+
+p{
+
+
+     margin-top: 1%;
+   font-size: 17px;
+   padding: 1px;
+}
+
+}
