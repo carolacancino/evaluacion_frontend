@@ -1,14 +1,17 @@
-
 var directionDisplay;
   var directionsService = new google.maps.DirectionsService();
   var map;
   $(function(){
   $('#submit').click(function(){
+    $("#carro").removeClass("hidden");
+    $("#search2").removeClass("hidden");
     calcRoute();
   });
    calcRoute();
   initialize();
   });
+
+
   // initialize the Google Map API.
   function initialize() {
     directionsDisplay = new google.maps.DirectionsRenderer();

@@ -50,27 +50,64 @@
 					<input type="text" id="start" value="" placeholder=""/>
 					<p>DESTINO:&nbsp;</p>
 					<input type="text" id="end" value="" placeholder=""/>
-					<input type="button" id="submit" value="Buscar" />
+					<input type="button" id="submit" value="Buscar" onclick="myFunction" />
 				</div>
 			</div>
 		</div>
-			<div id="map-canvas">
+		<div id="map-canvas">
+		</div>
+	</div><!--END HOME SECTION-->
+	<div id="moviles">
+		<div class="row">
+			<div class="col-xs-8 col-md-4 hidden" id="carro">
+				<h4>VEHÍCULO</h4>
+				<h6>seleccione</h6>
+				<div class="radio">
+					<label><input type="radio" name="optradio" class="moto"></label>
+					<img src="docs/moto.jpg" class="img-responsive auto" alt="">
+					<h4>Moto</h4>
+					<div class="precioMoto"></div>
+					<span class="llenar">máximo 2 pasajeros</span>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="optradio" class="automovil"></label>
+					<img src="docs/auto.jpg" alt="" class="img-responsive auto">
+					<h4>Automóvil</h4>
+					<div class="precioAuto"></div>
+					<span class="llenar">máximo 5 pasajeros</span>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="optradio" class="van"></label>
+					<img src="docs/van.jpg" alt="" class="img-responsive auto">
+					<h4>Minivan</h4>
+					<div class="precioVan"></div>
+					<span class="llenar">máximo 10 pasajeros</span>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="optradio" class="camion"></label>
+					<img src="docs/camion.jpg" alt="" class="img-responsive auto">
+					<h4>Camión</h4>
+					<div class="precioCamion"></div>
+					<span class="llenar">máximo 3 pasajeros</span>
+				</div>
+				<h4 class="cantidad ">Cantidad de pasajeros</h4>
+				<label><input type="text" class="psj" id="psj"></label>
+				<span id="txt"></span>
 			</div>
-		</div><!--END HOME SECTION-->
-		<section id="info"  >
-			<div class="container">
-			</div>
-		</section><!--END ABOUT SECTION-->
-		<section id="calculator" >
-			<div class="container">
-			</div>
-		</section><!--END PROJECT SECTION-->
-		<footer>
-			2014 www.yourdomain.com | All Right Reserved
-		</footer>><!-- END FOOTER SECTION -->
-		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		<script src='http://maps.googleapis.com/maps/api/js?sensor=false'></script>
-		<script src="src/js/main.js"></script>
-	</body>
-	</html>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-8 col-md-4">
+			<button type="button" class="btn btn-warning btn-lg btn-block hidden" id="search2">Compartir Carro!</button>
+		</div>
+	</div>
+
+	<footer>
+		2014 www.yourdomain.com | All Right Reserved
+	</footer><!-- END FOOTER SECTION -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src='http://maps.googleapis.com/maps/api/js?sensor=false'></script>
+	<script src="src/js/main.js"></script>
+</body>
+</html>
